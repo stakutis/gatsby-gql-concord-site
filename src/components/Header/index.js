@@ -7,7 +7,6 @@ import AuthContext from '../../utils/auth_context';
 import { navigate } from 'gatsby';
 import { MdAccountCircle } from 'react-icons/md';
 
-
 const Header = () => {
   const [menu, toggleMenu] = useState(false);
   const context = useContext(AuthContext);
@@ -58,41 +57,6 @@ const Header = () => {
         <div className={styles.searchbox}>
           <Search />
         </div>
-        {!context.state.isAuthenticated && (
-          <Link
-            to="/app/login"
-            className={styles.login_button}
-            activeClassName={styles.login_button_active}
-          >
-            Login
-          </Link>
-        )}
-
-        {context.state.isAuthenticated && (
-          <div className={styles.drop_down_wrapper}>
-            {context.state.user.photo ? (
-              <img
-                src={context.state.user.photo}
-                onClick={menuHandler}
-                className={styles.header_photo}
-                alt="Not Found"
-              />
-            ) : (
-              <MdAccountCircle className={styles.header_photo} onClick={menuHandler} />
-            )}
-
-            {menu && (
-              <div className={styles.drop_down}>
-                <div onClick={() => navigate('/app/profile')} className={styles.drop_down_link}>
-                  Profile
-                </div>
-                <div onClick={logOut} className={styles.drop_down_link}>
-                  Logout
-                </div>
-              </div>
-            )}
-          </div>
-        )}
       </div>
     </header>
   );
