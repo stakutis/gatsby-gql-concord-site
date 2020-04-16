@@ -7,6 +7,8 @@ import AuthContext from '../../utils/auth_context';
 import { navigate } from 'gatsby';
 import { MdAccountCircle } from 'react-icons/md';
 
+import { globalHistory as history } from '@reach/router';
+
 const Header = () => {
   const [menu, toggleMenu] = useState(false);
   const context = useContext(AuthContext);
@@ -25,8 +27,10 @@ const Header = () => {
     setTimeout(() => context.LogOut(), 200);
   };
 
+  const pathname = history.location.pathname === '/' ? true : false;
+
   return (
-    <header className={styles.header}>
+    <header className={pathname ? styles.header_home : styles.header_not_home}>
       <div className={styles.left_header}>
         <Link to="/">
           <img src={img} alt="" />
@@ -47,6 +51,13 @@ const Header = () => {
           activeClassName={styles.header_link_active}
         >
           Contact
+        </Link>
+        <Link
+          to="/services"
+          className={styles.header_link}
+          activeClassName={styles.header_link_active}
+        >
+          Services
         </Link>
         <Link to="/blog" className={styles.header_link} activeClassName={styles.header_link_active}>
           Blog

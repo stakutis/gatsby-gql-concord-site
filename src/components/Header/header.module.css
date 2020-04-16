@@ -13,12 +13,19 @@
   color: black;
 }
 
-.header {
+.header_home {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
   padding: 5px;
+  background-color: lightcyan;
+}
+
+.header_not_home {
   border-bottom: lightgrey 0.5px dotted;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-bottom: 15px;
 }
 
 .right_header {
