@@ -35,7 +35,7 @@
   height: 50%;
 }
 
-.wave_bottom > img {
+.wave_bottom_hero > img {
   width: 100%;
 }
 
@@ -54,4 +54,24 @@
   padding-bottom: 2em;
   width: 40%;
   height: 40%;
+}
+
+.pic_section {
+  justify-content: space-evenly;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.bottom_cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pic {
+  width: 25%;
+  height: 9em;
+}
+
+.bottom_cta_section {
+  padding-top: 5em;
 }
