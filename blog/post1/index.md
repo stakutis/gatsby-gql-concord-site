@@ -4,7 +4,7 @@ path: '/posts/post1'
 date: '2019-05-04'
 author: 'Moe'
 tags: ['post1', 'blue']
-featuredImage: './the-honest-company-xhW-gQPmeJA-unsplash.jpg'
+featuredImage: './micheile-henderson-micheile010-visual-stories-nl-s8nhmd5w49u-unsplash.jpg'
 ---
 
 ![bottle](./the-honest-company-xhW-gQPmeJA-unsplash.jpg)

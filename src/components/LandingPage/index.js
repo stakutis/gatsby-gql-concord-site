@@ -1,63 +1,44 @@
 import React from 'react';
-import './home2.css';
-import image1 from '../../../static/uploads/Man Reading a Book Illustration.jpg';
-import image2 from '../../../static/uploads/wave.svg';
-import image3 from '../../../static/uploads/undraw_indoor_bike_pwa4.svg';
-import image4 from '../../../static/uploads/Willis.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const Home2 = () => {
+import image1 from '../../../static/uploads/undraw_collaborators_prrw.svg';
+import image2 from '../../../static/uploads/wave.svg';
+import image3 from '../../../static/uploads/undraw_design_notes_8dmv.svg';
+import image5 from '../../../static/uploads/undraw_product_iteration_kjok.svg';
+
+import styles from './home.module.css';
+
+//emphazise built with react and high performance, maybe light house scrores
+
+const Home = () => {
   return (
-    <div className="main">
-      <div className="landing-hero flex-row">
-        <div className="value-prop">
+    <div className={styles.main}>
+      <div className={`${styles.landing_hero} ${styles.flex_row}`}>
+        <div className={styles.value_prop}>
           <h1>Main Value Prop</h1>
           <p> Some Text that describes value prop</p>
         </div>
-        <div className="illustration">
-          <img src={image3} alt="" />
-        </div>
+        <img className={styles.hero_illustration} src={image3} alt="" />
       </div>
-      <div className="wave-bottom">
+      <div className={styles.wave_bottom}>
         <img src={image2} alt="" />
       </div>
-      <div className="trust-bar">
-        <h1> Used by over 7000+ developers</h1>
-        <hr />
-      </div>
-      <div className="feature1 flex-row">
-        <div className="feature1-text">
+      <hr className={styles.top_line} />
+      <div className={`${styles.feature1} ${styles.flex_row}`}>
+        <div className={styles.feature1_text}>
           <h2>Benefit Feature of product</h2>
           <p>Supporting text of value prop</p>
         </div>
-        <div className="feature1-img">
-          <img src={image1} alt="" />
-        </div>
+        <img className={styles.feature1_img} src={image1} alt="" />
       </div>
-      <div className="feature2 flex-row">
-        <div className="feature2-img">
-          <img src={image1} alt="" />
-        </div>
-        <div className="feature2-text">
+      <div className={`${styles.feature1} ${styles.flex_row}`}>
+        <div className={styles.feature1_text}>
           <h2>Benefit Feature of product</h2>
           <p>Supporting text of value prop</p>
         </div>
+        <img className={styles.feature1_img} src={image5} alt="" />
       </div>
-      <div className="card-section flex-row">
-        <div className="card">
-          <img src={image4} alt="" />
-          <h1>Name:</h1>
-          <h3>Title</h3>
-          <p>Description</p>
-          <FontAwesomeIcon icon={faCoffee} />
-        </div>
-        <div className="card2"></div>
-        <div className="card"></div>
-      </div>
-      <div className="cta2"></div>
     </div>
   );
 };
 
-export default Home2;
+export default Home;

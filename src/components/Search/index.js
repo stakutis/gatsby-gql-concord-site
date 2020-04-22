@@ -10,9 +10,7 @@ const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_SEARCH_KEY
 );
 
-const Results = connectSearchBox(({ currentRefinement }) =>
-  currentRefinement ? <Hits /> : null
-);
+const Results = connectSearchBox(({ currentRefinement }) => (currentRefinement ? <Hits /> : null));
 
 const Hits = connectHits(({ hits }) => (
   <div className={styles.search_container}>
@@ -21,10 +19,10 @@ const Hits = connectHits(({ hits }) => (
 ));
 
 const SearchBox = ({ currentRefinement, refine }) => (
-  <form noValidate action='' role='search'>
+  <form noValidate action="" role="search">
     <input
-      type='search'
-      placeholder='Search...'
+      type="search"
+      placeholder="Search..."
       value={currentRefinement}
       onChange={event => refine(event.currentTarget.value)}
     />
@@ -35,10 +33,7 @@ const CustomSearchBox = connectSearchBox(SearchBox);
 
 const Search = () => {
   return (
-    <InstantSearch
-      indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME}
-      searchClient={searchClient}
-    >
+    <InstantSearch indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} searchClient={searchClient}>
       <CustomSearchBox />
       <Results />
     </InstantSearch>

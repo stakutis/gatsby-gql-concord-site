@@ -1,12 +1,12 @@
 import React from 'react';
-import Home2 from '../components/LandingPage';
+import Home from '../components/LandingPage';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
-      <Home2 />
+      <Home />
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
