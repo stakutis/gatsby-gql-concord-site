@@ -1,0 +1,5 @@
+.card_section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}

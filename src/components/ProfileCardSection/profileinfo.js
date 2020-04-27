@@ -1,4 +1,4 @@
-const profiles = [
+export const profiles = [
   {
     id: 1,
     name: 'Dr. Mark R. Willis, L.P.D',
