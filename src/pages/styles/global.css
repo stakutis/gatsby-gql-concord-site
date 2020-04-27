@@ -14,3 +14,7 @@ body {
   --primary-color: blue;
   --secondary-color: white;
 }
+
+.main_pages_top_div {
+  width: 80%;
+}

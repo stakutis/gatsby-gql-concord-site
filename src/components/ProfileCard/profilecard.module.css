@@ -1,7 +1,7 @@
-.card-section {
+.card_section {
+  display: flex;
   justify-content: space-evenly;
-  padding: 5px;
-  margin: 5px;
+  padding: 1em;
 }
 
 .card {
@@ -17,15 +17,6 @@
   height: 60%;
 }
 
-.card2 {
-  width: 25%;
-  height: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    304deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(227, 14, 14, 1) 3%,
-    rgba(255, 255, 255, 1) 14%
-  );
+.card_text {
+  padding-left: 1em;
 }

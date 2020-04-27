@@ -1,15 +1,12 @@
 import React, { useContext } from 'react';
 import Layout from '../components/Layout';
-import AuthContext from '../utils/auth_context';
+import ProfileCard from '../components/ProfileCard';
 
 const About = () => {
-  const context = useContext(AuthContext);
-
   return (
     <Layout title="About page">
-      <div>
-        <div>About Page</div>
-        <button onClick={() => context.LogOut()}>Button</button>
+      <div className="main_pages_top_div">
+        <ProfileCard />
       </div>
     </Layout>
   );
