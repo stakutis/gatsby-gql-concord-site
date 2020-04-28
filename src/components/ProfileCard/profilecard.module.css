@@ -1,16 +1,23 @@
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* fix card image for larger screens */
+/* fix card image for larger screens, add font weights to card text */
 
 .card > img {
   width: 100%;
-  height: 60%;
+  height: 30%;
 }
 
-.card_text {
+.card_title {
   padding-left: 1em;
+}
+
+.card_desc {
+  padding: 1em;
 }

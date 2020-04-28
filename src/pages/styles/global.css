@@ -10,6 +10,11 @@ body {
   font-weight: 100;
 }
 
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
 :root {
   --primary-color: blue;
   --secondary-color: white;
