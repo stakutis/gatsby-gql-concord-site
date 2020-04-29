@@ -68,10 +68,9 @@ export const profiles = [
   {
     id: 11,
     name: 'Tom Lucas',
-    title:
-      'Certified Quality & Reliability Engineer specializing in Medical Devices and Healthcare Systems',
+    title: 'Certified Quality & Reliability Engineer',
     description:
-      'with a focus on Quantitative Methods for Data Analysis, Data Visualization, Reliability & Risk Analysis (MTBF, FMEA, FTA). Experience working in a regulated environment for electrical medical devices (Quality Systems, Labeling, and Reporting) both domestic & international. Skilled in the use of data engineering, analysis and display tools including Python, SQL, Excel, graphing and other scripting languages for ongoing quality monitoring, risk analysis and charting. Current technology research is leading me into the use of open source data engineering, data analysis and data science for wildlife migration data filtering, reduction, analysis and graphing.'
+      'Specializing in Medical Devices and Healthcare Systems with a focus on Quantitative Methods for Data Analysis, Data Visualization, Reliability & Risk Analysis (MTBF, FMEA, FTA). Experience working in a regulated environment for electrical medical devices (Quality Systems, Labeling, and Reporting) both domestic & international. Skilled in the use of data engineering, analysis and display tools including Python, SQL, Excel, graphing and other scripting languages for ongoing quality monitoring, risk analysis and charting. Current technology research is leading me into the use of open source data engineering, data analysis and data science for wildlife migration data filtering, reduction, analysis and graphing.'
   },
   {
     id: 12,

@@ -2,6 +2,7 @@ import React from 'react';
 import image4 from '../../../static/profiles/Willis.png';
 import styles from './profilecard.module.css';
 import Shiitake from 'shiitake';
+import { navigate } from 'gatsby';
 
 const ProfileCard = props => {
   const truncClick = event => {
@@ -10,24 +11,22 @@ const ProfileCard = props => {
 
   return (
     <div className={styles.card}>
-      <div className={styles.wrap}>
-        <div className="flex_row">
-          <img src={image4} alt="" />
-          <div className={styles.card_title}>
-            <h2>{props.profile.name}</h2>
-            <h3>{props.profile.title}</h3>
-          </div>
+      <div className="flex_row">
+        <img className={styles.card_image} src={image4} alt="" />
+        <div className={styles.card_title}>
+          <h2>{props.profile.name}</h2>
+          <h3>{props.profile.title}</h3>
         </div>
-        <Shiitake
-          onClick={event => console.log('ggg')}
-          lines={4}
-          throttleRate={200}
-          className="my-element"
-          overflowNode={<div onClick={() => console.log('ggg')}>...read more</div>}
-        >
-          {props.profile.description}
-        </Shiitake>
       </div>
+      <hr />
+      <Shiitake
+        lines={4}
+        throttleRate={200}
+        className="my-element"
+        overflowNode={<div onClick={() => navigate('/services')}>...read more</div>}
+      >
+        {props.profile.description}
+      </Shiitake>
     </div>
   );
 };
