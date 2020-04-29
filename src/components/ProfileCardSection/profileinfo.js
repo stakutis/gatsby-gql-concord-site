@@ -9,10 +9,9 @@ export const profiles = [
   {
     id: 2,
     name: 'Jeff Lee, PMP',
-    title:
-      'Cornell University, Masters in Engineering, Electrical Engineering (Computer Engineering). Licensed PMP and Educator.',
+    title: 'Licensed PMP and Educator.',
     description:
-      'Seasoned Project manager and IT manger - managing Medicaid Information System in Rhode Island. Recognized expertise in Unix, Windows Server, Microsoft SQL, and HTML. Jeff understands and meets his clients needs and works with system administrators and developers to deliver on those needs. He has a proven track record of building relationships and completing projects. Strong problem solver skills and methodical troubleshooter. Completing a project on time and on budget is the primary goal but how we reach the end point is nearly as important.'
+      'Cornell University, Masters in Engineering, Electrical Engineering (Computer Engineering). Seasoned Project manager and IT manger - managing Medicaid Information System in Rhode Island. Recognized expertise in Unix, Windows Server, Microsoft SQL, and HTML. Jeff understands and meets his clients needs and works with system administrators and developers to deliver on those needs. He has a proven track record of building relationships and completing projects. Strong problem solver skills and methodical troubleshooter. Completing a project on time and on budget is the primary goal but how we reach the end point is nearly as important.'
   },
   {
     id: 3,

@@ -1,6 +1,9 @@
 .card_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1em;
+}
+
+.card {
   padding: 1em;
 }
