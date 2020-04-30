@@ -2,10 +2,10 @@ import React from 'react';
 import { navigate } from 'gatsby';
 
 //illustrations
-import image1 from '../../../static/uploads/undraw_collaborators_prrw.svg';
+import image1 from '../../../static/uploads/coding_.svg';
 import image2 from '../../../static/uploads/wave.svg';
 import image3 from '../../../static/uploads/undraw_design_notes_8dmv.svg';
-import image5 from '../../../static/uploads/undraw_product_iteration_kjok.svg';
+import image5 from '../../../static/uploads/code_development_.svg';
 
 //pics
 import pic1 from '../../../static/uploads/cloud.jpg';

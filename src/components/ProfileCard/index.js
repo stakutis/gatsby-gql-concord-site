@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image4 from '../../../static/profiles/Willis.png';
+
 import styles from './profilecard.module.css';
 import Shiitake from 'shiitake';
 
@@ -17,7 +17,6 @@ const ProfileCard = props => {
   return (
     <div className={trunc ? styles.card : styles.card_full}>
       <div className="flex_row">
-        <img className={styles.card_image} src={image4} alt="" />
         <img className={styles.card_image} src={props.profile.image} alt="" />
         <div className={styles.card_title}>
           <h2>{props.profile.name}</h2>

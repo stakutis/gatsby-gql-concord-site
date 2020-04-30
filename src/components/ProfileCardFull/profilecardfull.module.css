@@ -1,0 +1,24 @@
+.card_full {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+/* fix card image for larger screens, add font weights to card text */
+
+.card_image {
+  width: 10em;
+  height: 13em;
+}
+
+.card_title {
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 0.2em;
+}
+
+.card_desc {
+  padding: 1em;
+}
