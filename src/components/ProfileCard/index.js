@@ -1,32 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import image4 from '../../../static/profiles/Willis.png';
 import styles from './profilecard.module.css';
 import Shiitake from 'shiitake';
-import { navigate } from 'gatsby';
 
 const ProfileCard = props => {
-  const truncClick = event => {
-    console.log(event);
+  const [trunc, setState] = useState(true);
+
+  const setCard = () => {
+    if (trunc === false) {
+      setState(true);
+    } else {
+      setState(false);
+    }
   };
 
   return (
-    <div className={styles.card}>
+    <div className={trunc ? styles.card : styles.card_full}>
       <div className="flex_row">
         <img className={styles.card_image} src={image4} alt="" />
+        <img className={styles.card_image} src={props.profile.image} alt="" />
         <div className={styles.card_title}>
           <h2>{props.profile.name}</h2>
           <h3>{props.profile.title}</h3>
         </div>
       </div>
-      <hr />
-      <Shiitake
-        lines={4}
-        throttleRate={200}
-        className="my-element"
-        overflowNode={<div onClick={() => navigate('/services')}>...read more</div>}
-      >
-        {props.profile.description}
-      </Shiitake>
+      {trunc ? (
+        <Shiitake
+          lines={6}
+          throttleRate={200}
+          className={styles.card_desc}
+          overflowNode={
+            <div className={styles.read_more} onClick={setCard}>
+              Read More...
+            </div>
+          }
+        >
+          {props.profile.description}
+        </Shiitake>
+      ) : (
+        <>
+          <div className={styles.card_desc}> {props.profile.description} </div>
+          <div className={styles.collapse} onClick={setCard}>
+            Collapse...
+          </div>
+        </>
+      )}
     </div>
   );
 };

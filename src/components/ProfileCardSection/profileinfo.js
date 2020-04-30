@@ -1,6 +1,14 @@
+import image1 from '../../../static/profiles/0-1.jpeg';
+import image2 from '../../../static/profiles/0.jpeg';
+import image3 from '../../../static/profiles/0109_Evaluator-web-150x150.jpg';
+import image4 from '../../../static/profiles/249324_201728233204474_490733_n-1-e1569431284263-150x150.jpg';
+import image5 from '../../../static/profiles/corey-hopkins-photo-150x150.jpg';
+
+
 export const profiles = [
   {
     id: 1,
+    image: ,
     name: 'Dr. Mark R. Willis, L.P.D',
     title: 'Seasoned Pharmaceuticals and Medical Device professional',
     description:
@@ -8,6 +16,7 @@ export const profiles = [
   },
   {
     id: 2,
+    image: ,
     name: 'Jeff Lee, PMP',
     title: 'Licensed PMP and Educator.',
     description:
@@ -15,24 +24,29 @@ export const profiles = [
   },
   {
     id: 3,
+    image: image3,
     name: 'John Webster',
     title: 'Industry Analyst, Author, Cloud Specialist.',
     description: `John Webster's early IT background was developed in the mainframe leasing business. In 1990, he transitioned to IDC as an analyst, where he specialized in mainframe competitive analysis. Later, he founded the storage practice at Yankee Group. In 2002, he founded Data Mobility Group and later joined Evaluator Group in 2009 where he now specializes in cloud computing and AI. He has published primary research on hybrid cloud usage and IT as a Service. He also publishes a blog on Forbes.com called Inescapable Data.`
   },
   {
     id: 4,
+    image: ,
     name: 'Tom Boyle',
     title: 'Healthcare Marketing executive',
     description: `Tom Boyle has an extensive background across all aspects of strategic and tactical marketing. With a focus on the rapid growth of devices appearing at the edge of networks – especially within the healthcare market – and recognizing the need to not only securely manage these remote and mobile healthcare devices but use the data to improve patient outcome. He has led the strategy behind the development of ecosystems to provide analytical tools enabling the advancement of remote monitoring of mobile “at risk” populations.`
   },
   {
     id: 5,
+    image: image1,
     name: 'Brian Moulton',
+
     title: 'DevOps Master, Thought Leader, Cloud Deployment Expert',
     description: `Experienced Manager with a demonstrated history of working in the marketing and advertising industry. Skilled in Linux System Administration, DevOps, Management, Software as a Service (SaaS), and Configuration Management. Through thought leadership, Brian has driven organizations to successful growth and execution.`
   },
   {
     id: 6,
+    image: image4,
     name: 'Moe Iqbal',
     title: 'Fullstack Deveolper and Coding Instructor',
     description:
@@ -40,12 +54,14 @@ export const profiles = [
   },
   {
     id: 7,
+    image: image2,
     name: 'Ozden Akyildiz',
     title: 'Experienced Research and Development Specialist Contract & Distribution Coordinator',
     description: `Holds a Master of Science (MS) in Mechatronics, Robotics, and Automation Engineering from Worcester Polytechnic Institute, Rho Beta Epsilon Honor Society. Recognized for creating novel marketing applications, technology acquisition and product development processes as well as handling Software and Systems Engineering tasks in such projects. Extensively hands-on in Robotics, Controls, and Embedded Systems background.`
   },
   {
     id: 8,
+    image: ,
     name: 'Mike Rowan',
     title: 'Software architect & executive',
     description:
@@ -53,6 +69,7 @@ export const profiles = [
   },
   {
     id: 9,
+    image: ,
     name: 'Sal Mendola',
     title: 'Seasoned Software Architect',
     description:
@@ -60,6 +77,7 @@ export const profiles = [
   },
   {
     id: 10,
+    image: ,
     name: 'Rohan-Paul',
     title: 'International Financial Analyst and Full Stack Software Engineer',
     description:
@@ -67,6 +85,7 @@ export const profiles = [
   },
   {
     id: 11,
+    image: ,
     name: 'Tom Lucas',
     title: 'Certified Quality & Reliability Engineer',
     description:
@@ -74,6 +93,7 @@ export const profiles = [
   },
   {
     id: 12,
+    image: ,
     name: 'Obo Agboghidi',
     title: 'FullStack developer',
     description:
@@ -81,6 +101,7 @@ export const profiles = [
   },
   {
     id: 13,
+    image: image5,
     name: 'Corey Hopkins',
     title: 'Software Developer and Digital Artist',
     description:
