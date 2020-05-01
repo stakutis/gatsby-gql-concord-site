@@ -8,8 +8,10 @@ const ProfileCardFull = props => {
       <div className="flex_row">
         <img className={styles.card_image} src={props.profile.image} alt="" />
         <div className={styles.card_title}>
-          <h2>{props.profile.name}</h2>
-          <h3>{props.profile.title}</h3>
+          <h2>
+            {props.profile.name}, {props.profile.title}
+          </h2>
+          <h3></h3>
         </div>
       </div>
       <div className={styles.card_desc}> {props.profile.description} </div>
