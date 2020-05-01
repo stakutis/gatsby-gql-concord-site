@@ -8,7 +8,7 @@ const ServiceCard = props => {
   return (
     <div>
       <h1>{service.title}</h1>
-      <FontAwesomeIcon style={{ fontSize: '2em' }} icon={service.icon.displayName} />
+      <div>{service.icon()}</div>
       <p>{service.description}</p>
     </div>
   );
