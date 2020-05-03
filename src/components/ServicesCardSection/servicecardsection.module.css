@@ -1,5 +1,7 @@
-.icon_style_main {
+.main_icon {
   font-size: 5em;
+  color: blue;
+  animation: spin 10s linear infinite;
 }
 
 .top_div {
@@ -8,5 +10,19 @@
   align-items: center;
 }
 
-.icon_style {
+.card_rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  flex-basis: 33%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

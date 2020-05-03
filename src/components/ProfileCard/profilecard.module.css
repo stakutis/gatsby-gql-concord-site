@@ -4,6 +4,7 @@
   box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
   height: 22em;
   width: 100%;
+  border-bottom: 2em solid blue;
 }
 
 .card_full {

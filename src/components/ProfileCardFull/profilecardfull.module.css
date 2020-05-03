@@ -4,6 +4,7 @@
   box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
   height: 100%;
   width: 100%;
+  border-bottom: 2em solid blue;
 }
 
 /* fix card image for larger screens, add font weights to card text */

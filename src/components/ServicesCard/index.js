@@ -1,15 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './servicecard.module.css';
 
 const ServiceCard = props => {
   const { service } = props;
   console.log(service);
 
   return (
-    <div>
+    <div className={styles.card}>
       <h1>{service.title}</h1>
-      <div>{service.icon()}</div>
-      <p>{service.description}</p>
+      <div className={styles.icon}>{service.icon()}</div>
+      <ul className={styles.service_list}>
+        {service.description.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 };
