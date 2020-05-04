@@ -19,6 +19,10 @@
   background-color: lightcyan;
 }
 
+.site_title {
+  text-align: center;
+}
+
 .value_prop {
   padding-top: 6em;
   padding-right: 3.5em;

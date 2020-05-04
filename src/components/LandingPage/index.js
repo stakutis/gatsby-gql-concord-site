@@ -32,7 +32,9 @@ const Home = () => {
       <div className={styles.wave_bottom_hero}>
         <img src={image2} alt="" />
       </div>
+      <h1 className={styles.site_title}> Concord Software and Executive Consulting</h1>
       <hr className={styles.top_line} />
+      /* Animate in next 2 sections */
       <div className={`${styles.feature1} ${styles.flex_row}`}>
         <div className={styles.feature1_text}>
           <h2>Benefit Feature of product</h2>
