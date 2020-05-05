@@ -10,12 +10,45 @@
   align-items: center;
 }
 
-.card_rows {
+.consult_card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
+  height: 7em;
+  width: 17em;
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+}
 
-  flex-basis: 33%;
+.consult_card > p {
+  font-size: 1.2em;
+  padding-right: 0.9em;
+}
+
+.consult_icon {
+  font-size: 2.7em;
+  padding: 0.5em;
+  padding-top: 0.7em;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.second_header {
+  margin-top: 5em;
+}
+
+.card_rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [row1-start] 1fr [row2-start] 1fr;
+  gap: 2em 2em;
+}
+
+.title_desc {
+  padding-left: 1em;
 }
 
 @keyframes spin {
