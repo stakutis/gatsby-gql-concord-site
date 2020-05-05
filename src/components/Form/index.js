@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactFormPage = () => (
+const ContactForm = () => (
   <form name="Contact Form" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="Contact Form" />
     <div>
@@ -15,4 +15,4 @@ const ContactFormPage = () => (
   </form>
 );
 
-export default ContactFormPage;
+export default ContactForm;
