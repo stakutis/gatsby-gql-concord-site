@@ -66,7 +66,7 @@ export const profiles = [
     id: 6,
     image: image4,
     name: 'Moe Iqbal',
-    title: 'Fullstack Deveolper and Coding Instructor',
+    title: 'Fullstack Developer and Coding Instructor',
     description:
       'Experienced code reviewer and Fullstack developer at coding spectrum. Established engineer with deep front-end skills. Experienced in fullstack dev at coding spectrum. Code reviewer at Udacity accomplishing top 3% overall on stackoverflow for May 2019 and 10% overall for 2019'
   },

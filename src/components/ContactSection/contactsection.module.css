@@ -1,0 +1,17 @@
+.background {
+  background-color: antiquewhite;
+  height: 500px;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.top_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-bottom: -0.5em;
+}
