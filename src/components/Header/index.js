@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 import Search from '../Search';
 import AuthContext from '../../utils/auth_context';
 import { navigate } from 'gatsby';
-import { MdAccountCircle } from 'react-icons/md';
 
 import { globalHistory as history } from '@reach/router';
 

@@ -3,7 +3,6 @@ import styles from './servicecard.module.css';
 
 const ServiceCard = props => {
   const { service } = props;
-  console.log(service);
 
   return (
     <div className={styles.card}>

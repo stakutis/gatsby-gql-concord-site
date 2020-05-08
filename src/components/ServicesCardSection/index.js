@@ -1,6 +1,5 @@
 import React from 'react';
 import ServiceCard from '../ServicesCard';
-
 import styles from './servicecardsection.module.css';
 import { servicesWeb, otherServices } from './services';
 import { FaReact } from 'react-icons/fa';

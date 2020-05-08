@@ -1,4 +1,4 @@
-.search_container {
+.search_results {
   z-index: 100;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 80%;
@@ -8,4 +8,29 @@
   position: absolute;
   top: 10%;
   left: 10%;
+}
+
+.search_icon {
+  padding-left: 0.2em;
+  padding-top: 0.2em;
+  font-size: 1.2em;
+}
+
+.search_box {
+  display: flex;
+}
+
+.search {
+  background: transparent;
+  border: none;
+  padding: 1px;
+  border-bottom: 1px solid blue;
+}
+
+.search:hover,
+.search:focus {
+  background: transparent;
+  border: none;
+  padding: 3px;
+  border-bottom: 1px solid blue;
 }
