@@ -6,7 +6,7 @@ const ServiceCard = props => {
 
   return (
     <div className={styles.card}>
-      <h1>{service.title}</h1>
+      <h1 className={styles.service_title}>{service.title}</h1>
       <div className={styles.icon}>{service.icon()}</div>
       <ul className={styles.service_list}>
         {service.description.map(item => (

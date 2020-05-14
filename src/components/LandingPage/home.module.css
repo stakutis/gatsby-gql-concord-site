@@ -24,9 +24,7 @@
 }
 
 .value_prop {
-  padding-top: 6em;
-  padding-right: 3.5em;
-  flex-basis: 30%;
+  padding-top: 2em;
 }
 
 .top_line {
@@ -37,6 +35,8 @@
 .hero_illustration {
   width: 50%;
   height: 50%;
+  padding-right: 1em;
+  margin-right: 1.5em;
 }
 
 .wave_bottom_hero > img {

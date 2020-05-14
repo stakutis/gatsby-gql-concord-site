@@ -11,7 +11,7 @@ const PostList = ({ post, excerpt }) => {
       <Link className={styles.link} to={`${post.path}`}>
         <Img fluid={featuredImg} />
         <div className={styles.post_text}>
-          <h4>{post.title}</h4>
+          <h3>{post.title}</h3>
           <div>By: {post.author}</div>
           <small>{post.date}</small>
           <p> {excerpt}</p>

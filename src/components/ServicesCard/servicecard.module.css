@@ -3,10 +3,15 @@
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
   height: 20em;
-  width: 14em;
+  width: 16em;
   align-items: center;
   border-bottom: 2em solid blue;
   border-radius: 2em;
+}
+
+.service_title {
+  font-size: 1.7em;
+  white-space: nowrap;
 }
 
 .icon {

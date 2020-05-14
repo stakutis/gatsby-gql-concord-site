@@ -8,7 +8,7 @@ const Blog = ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
 
   return (
-    <Layout title='Blog' description='All the posts'>
+    <Layout title="Blog" description="All the posts">
       <div className={styles.blog_layout}>
         {edges
           ? edges.map(edge => (
@@ -38,6 +38,7 @@ export const pageQuery = graphql`
             path
             title
             author
+            heading
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 1200) {

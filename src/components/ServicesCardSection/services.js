@@ -10,13 +10,13 @@ import { FcSportsMode } from 'react-icons/fc';
 export const servicesWeb = [
   {
     id: 1,
-    title: 'Front End',
+    title: 'Front-End',
     icon: FcMultipleDevices,
     description: ['React', 'Redux', 'Gatsby', 'HTML, CSS, Javascript', 'Auth0', 'D3']
   },
   {
     id: 2,
-    title: 'Server Side',
+    title: 'Server-Side',
     icon: FcFilingCabinet,
     description: ['Node.js', 'Serverless AWS Lambda', 'Java', 'REST API Design', 'Python Django']
   },

@@ -24,9 +24,10 @@ const Home = () => {
   return (
     <div className={styles.main}>
       <div className={`${styles.landing_hero} ${styles.flex_row}`}>
-        <div className={styles.value_prop}>
-          <h1>World Class Tech Experts Helping You Make Your Idea a Reality</h1>
-        </div>
+        <h1 className={styles.value_prop}>
+          World Class Tech Experts Helping You Make Your Idea a Reality
+        </h1>
+
         <img className={styles.hero_illustration} src={image3} alt="" />
       </div>
       <div className={styles.wave_bottom_hero}>

@@ -9,9 +9,11 @@ const SearchList = ({ hit }) => {
     <div className={styles.search_layout}>
       <Link className={styles.link} to={`/${hit.path}`}>
         <div className={styles.post_text}>
-          <h4>{hit.title}</h4>
-          <div>By: {hit.author}</div>
-          <small>{hit.date}</small>
+          <h2>{hit.title}</h2>
+          <small>
+            {hit.date} by {hit.author}
+          </small>
+          <h4>{hit.heading}</h4>
           <p> {excerpt}</p>
         </div>
       </Link>
