@@ -9,12 +9,15 @@ const PostList = ({ post, excerpt }) => {
   return (
     <div className={styles.post_layout}>
       <Link className={styles.link} to={`${post.path}`}>
-        <Img fluid={featuredImg} />
-        <div className={styles.post_text}>
-          <h3>{post.title}</h3>
-          <div>By: {post.author}</div>
-          <small>{post.date}</small>
-          <p> {excerpt}</p>
+        <div className={styles.post_container}>
+          <Img className={styles.feature_image} fluid={featuredImg} />
+          <div className={styles.post_text_container}>
+            <h3>{post.title}</h3>
+            <small>
+              {post.date} by {post.author}
+            </small>
+            <p> {excerpt}</p>
+          </div>
         </div>
       </Link>
     </div>

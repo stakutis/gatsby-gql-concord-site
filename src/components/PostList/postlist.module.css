@@ -4,8 +4,15 @@
 
 .post_layout {
   border: lightgrey 0.5px solid;
+  margin-bottom: 1em;
 }
 
-.post_text {
+.post_layout:hover {
+  border: lightgrey 0.5px solid;
+  margin-bottom: 1em;
+  background-color: aliceblue;
+}
+
+.post_text_container {
   padding: 1em;
 }
