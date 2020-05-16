@@ -13,12 +13,21 @@ import { globalHistory as history } from '@reach/router';
 
 const MobileHeader = () => {
   const [menu, toggleMenu] = useState(false);
+  const [search, setSearch] = useState(false);
 
   const menuHandler = () => {
     if (menu) {
       toggleMenu(false);
     } else {
       toggleMenu(true);
+    }
+  };
+
+  const searchHandler = () => {
+    if (search) {
+      setSearch(false);
+    } else {
+      setSearch(true);
     }
   };
 
@@ -49,11 +58,8 @@ const MobileHeader = () => {
 
         <div className={styles.right_header}>
           <div className={styles.searchbox}>
-            <div onClick={() => console.log('fff')} className={styles.search_icon}>
+            <div onClick={searchHandler} className={styles.search_icon}>
               <FcSearch />
-            </div>
-            <div className={styles.search}>
-              <Search />
             </div>
           </div>
         </div>
@@ -85,6 +91,11 @@ const MobileHeader = () => {
             </Link>
           </div>
         </>
+      )}
+      {search && (
+        <div className={styles.search}>
+          <Search />
+        </div>
       )}
     </>
   );

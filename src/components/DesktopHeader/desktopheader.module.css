@@ -43,52 +43,6 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .header_home {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em;
-    background-color: lightcyan;
-  }
-
-  .header_not_home {
-    border-bottom: lightgrey 0.5px dotted;
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em;
-    margin-bottom: 2em;
-  }
-
-  .right_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: 50%;
-  }
-
-  .left_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-  }
-
-  .mid_header {
-    display: none;
-  }
-
-  .search {
-    display: none;
-  }
-
-  .search_icon {
-    font-size: 2em;
-    cursor: pointer;
-  }
-}
-
 /* header links */
 
 .header_link {
