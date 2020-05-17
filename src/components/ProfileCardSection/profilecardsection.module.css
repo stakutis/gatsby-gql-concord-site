@@ -1,7 +1,17 @@
-.card_section {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 1em;
+@media only screen and (min-width: 900px) {
+  .card_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card_section {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
 }
 
 .top_div {

@@ -15,7 +15,7 @@
   flex-direction: row;
   box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
   height: 7em;
-  width: 17em;
+  width: 17.5em;
   margin-top: 3.5em;
   margin-bottom: 3.5em;
 }
@@ -37,14 +37,14 @@ h1 {
 }
 
 .second_header {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .card_rows {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: [row1-start] 1fr [row2-start] 1fr;
-  gap: 2em 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .title_desc {

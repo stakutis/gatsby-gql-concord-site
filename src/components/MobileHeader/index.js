@@ -57,17 +57,26 @@ const MobileHeader = () => {
         </div>
 
         <div className={styles.right_header}>
-          <div className={styles.searchbox}>
-            <div onClick={searchHandler} className={styles.search_icon}>
-              <FcSearch />
+          {search && (
+            <div className={pathname ? styles.search_home : styles.search_not_home}>
+              <Search />
             </div>
+          )}
+          <div onClick={searchHandler} className={styles.search_icon}>
+            <FcSearch />
           </div>
         </div>
       </header>
       {menu && (
         <>
-          <div className={styles.dropdown}>
-            <div className={styles.header_link}>About</div>
+          <div className={pathname ? styles.dropdown_home : styles.dropdown_not_home}>
+            <Link
+              to="/about"
+              className={styles.header_link}
+              activeClassName={styles.header_link_active}
+            >
+              About
+            </Link>
             <Link
               to="/contact"
               className={styles.header_link}
@@ -91,11 +100,6 @@ const MobileHeader = () => {
             </Link>
           </div>
         </>
-      )}
-      {search && (
-        <div className={styles.search}>
-          <Search />
-        </div>
       )}
     </>
   );

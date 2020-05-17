@@ -19,22 +19,24 @@ const Hits = connectHits(({ hits }) => (
   </div>
 ));
 
-const SearchBox = ({ currentRefinement, refine }) => (
-  <div className={styles.search_box}>
-    <form noValidate action="" role="search">
-      <input
-        className={styles.search}
-        type="search"
-        placeholder="Search..."
-        value={currentRefinement}
-        onChange={event => refine(event.currentTarget.value)}
-      />
-    </form>
-    <div className={styles.search_icon}>
-      <FcSearch />
+const SearchBox = ({ currentRefinement, refine, props }) => {
+  return (
+    <div className={styles.search_box}>
+      <form noValidate action="" role="search">
+        <input
+          className={styles.search}
+          type="search"
+          placeholder="Search..."
+          value={currentRefinement}
+          onChange={event => refine(event.currentTarget.value)}
+        />
+      </form>
+      <div className={styles.search_icon}>
+        <FcSearch />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const CustomSearchBox = connectSearchBox(SearchBox);
 

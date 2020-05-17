@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(128, 118, 118, 0.2);
-  height: 100%;
-  width: 100%;
   border-bottom: 2em solid blue;
 }
 
@@ -17,7 +15,7 @@
 .card_title {
   padding-top: 5em;
   padding-left: 1em;
-  padding-right: 0.2em;
+  padding-right: 1em;
 }
 
 .card_desc {

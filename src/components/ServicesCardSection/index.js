@@ -19,7 +19,9 @@ const ServiceCardSection = () => {
         <div className={styles.consult_icon}>
           <FcOnlineSupport />
         </div>
-        <p>Free consultations to discuss your software & engineering needs</p>
+        <p>
+          <strong>Free Consultations</strong> to discuss your software & engineering needs
+        </p>
       </div>
 
       <h1> Web Development</h1>

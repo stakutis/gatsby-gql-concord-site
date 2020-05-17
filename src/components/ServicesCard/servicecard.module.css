@@ -7,6 +7,7 @@
   align-items: center;
   border-bottom: 2em solid blue;
   border-radius: 2em;
+  margin: 1em;
 }
 
 .service_title {
