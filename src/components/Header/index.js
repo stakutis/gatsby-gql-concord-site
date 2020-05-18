@@ -3,13 +3,16 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 
 const Header = () => {
-  const [isMobile, setMobile] = useState(false);
+  const [innerWidthState, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    if (window.innerWidth < 900) setMobile(true);
-  });
+    let handleResize = () => setWidth(window.innerWidth);
 
-  return isMobile ? <MobileHeader /> : <DesktopHeader />;
+    window.addEventListener('resize', handleResize);
+    window.removeEventListener('resize', handleResize);
+  }, [innerWidthState]);
+
+  return innerWidthState < 900 ? <MobileHeader /> : <DesktopHeader />;
 };
 
 export default Header;

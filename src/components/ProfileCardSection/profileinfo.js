@@ -8,7 +8,7 @@ import image7 from '../../../static/profiles/JeffLee.jpeg';
 import image8 from '../../../static/profiles/MG_0766-150x150.jpg';
 import image9 from '../../../static/profiles/mike.jpeg';
 import image10 from '../../../static/profiles/paul_rohan-300x300.jpeg';
-import image11 from '../../../static/profiles/sal.jpeg';
+import image11 from '../../../static/profiles/Sal.jpeg';
 import image12 from '../../../static/profiles/unnamed-1.jpg';
 import image13 from '../../../static/profiles/Willis.png';
 
