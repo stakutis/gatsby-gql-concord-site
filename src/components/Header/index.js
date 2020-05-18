@@ -8,6 +8,10 @@ const Header = () => {
   const [innerWidthState, setWidth] = useState(windowWidth);
 
   useEffect(() => {
+    setWidth(window.innerWidth);
+  });
+
+  useEffect(() => {
     let handleResize = () => setWidth(window.innerWidth);
 
     window.addEventListener('resize', handleResize);

@@ -9,7 +9,7 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     setLoading(true);
-    setTimeout(() => navigate('/services'), 800);
+    setTimeout(() => navigate('/formsubmit'), 800);
   };
 
   return (
