@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 
+const windowWidth = typeof window !== 'undefined' && window.innerWidth;
+
 const Header = () => {
-  const [innerWidthState, setWidth] = useState(window.innerWidth);
+  const [innerWidthState, setWidth] = useState(windowWidth);
 
   useEffect(() => {
-    let handleResize = () => setWidth(window.innerWidth);
+    if (typeof window !== 'undefined') {
+      let handleResize = () => setWidth(window.innerWidth);
+    }
 
     window.addEventListener('resize', handleResize);
     window.removeEventListener('resize', handleResize);

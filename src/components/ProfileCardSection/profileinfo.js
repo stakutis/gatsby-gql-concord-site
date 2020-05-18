@@ -11,7 +11,6 @@ import image10 from '../../../static/profiles/paul_rohan-300x300.jpeg';
 import image11 from '../../../static/profiles/Sal.jpeg';
 import image12 from '../../../static/profiles/unnamed-1.jpg';
 import image13 from '../../../static/profiles/Willis.png';
-
 import image14 from '../../../static/profiles/StakutisHeadShot-oe3adcaxybu14a3dnu9a9o3e64m3ghnt3vbfyhes3c.jpg';
 
 export const profile1 = {
