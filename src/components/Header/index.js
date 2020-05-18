@@ -8,9 +8,7 @@ const Header = () => {
   const [innerWidthState, setWidth] = useState(windowWidth);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      let handleResize = () => setWidth(window.innerWidth);
-    }
+    let handleResize = () => setWidth(window.innerWidth);
 
     window.addEventListener('resize', handleResize);
     window.removeEventListener('resize', handleResize);
