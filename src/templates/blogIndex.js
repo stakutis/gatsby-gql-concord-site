@@ -68,7 +68,7 @@ const BlogIndex = props => {
 export default BlogIndex;
 
 export const query = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: $limit
