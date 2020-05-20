@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from '../Form';
+import SocialBar from '../SocialBar';
 import styles from './contactsection.module.css';
 import image2 from '../../../static/uploads/wave2.svg';
 
@@ -14,6 +15,15 @@ const ContactSection = () => {
         <ContactForm />
         <img src={image2} alt="" />
         <div className={styles.background}> </div>
+        <div className={styles.email_phone}>
+          <h3>Also Available by Phone and Email</h3>
+        </div>
+        <div className={styles.social_bar}>
+          <h3 className={styles.social_title}>
+            Feel Free to Connect With Us on Social, Just to Chat
+          </h3>
+          <SocialBar />
+        </div>
       </div>
     </div>
   );

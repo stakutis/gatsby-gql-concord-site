@@ -15,9 +15,7 @@ const Tags = ({ data }) => {
           {tags.map(tag => {
             return (
               <div key={tag.fieldValue}>
-                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                  {tag.fieldValue}
-                </Link>
+                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>{tag.fieldValue}</Link>
               </div>
             );
           })}

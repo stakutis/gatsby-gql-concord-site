@@ -27,7 +27,7 @@ const ServiceCardSection = () => {
       <h1> Web Development</h1>
       <div className={styles.card_rows}>
         {servicesWeb.map(service => (
-          <ServiceCard service={service} />
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
       <h1 className={styles.second_header}>Other Services</h1>
