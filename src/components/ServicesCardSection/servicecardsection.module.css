@@ -49,6 +49,7 @@ h1 {
 
 .title_desc {
   padding-left: 1em;
+  margin: 1em;
 }
 
 @keyframes spin {

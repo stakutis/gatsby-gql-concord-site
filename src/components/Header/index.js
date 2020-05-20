@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react';
 import styles from './header.module.css';
-import img from '../../../static/logos/favicon.ico';
+
 import { Link } from 'gatsby';
 import Search from '../Search';
 import AuthContext from '../../utils/auth_context';
+import logo from '../../../static/logos/cropped-LogoMakr_0AjBRk-72x24.png';
 import { navigate } from 'gatsby';
-
 import { FcSearch } from 'react-icons/fc';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -52,7 +52,7 @@ const Header = () => {
           {/* Desktop */}
           <div className={styles.desktop_logo}>
             <Link to="/">
-              <img src={img} alt="" />
+              <img src={logo} alt="" />
             </Link>
           </div>
           {/* Mobile */}
@@ -104,7 +104,7 @@ const Header = () => {
           {/* Mobile */}
           <div className={styles.mobile_logo}>
             <Link to="/">
-              <img src={img} alt="" />
+              <img src={logo} alt="" />
             </Link>
           </div>
         </div>

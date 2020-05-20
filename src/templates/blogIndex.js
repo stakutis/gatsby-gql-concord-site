@@ -29,7 +29,7 @@ const BlogIndex = props => {
           <div className={styles.pagination_row}>
             {!isFirstPage && (
               <div className={styles.previous}>
-                <Link to={previousPagePath}>Newer Posts</Link>
+                <Link to={previousPagePath}>More Recent Posts </Link>
               </div>
             )}
 
