@@ -16,7 +16,7 @@ const ProfileCard = props => {
 
   return (
     <div className={trunc ? styles.card : styles.card_full}>
-      <div className="flex_row">
+      <div className={styles.card_top_row}>
         <img className={styles.card_image} src={props.profile.image} alt="" />
         <div className={styles.card_title}>
           <h2>{props.profile.name}</h2>

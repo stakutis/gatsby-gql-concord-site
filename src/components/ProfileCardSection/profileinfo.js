@@ -82,7 +82,7 @@ export const profiles = [
     name: 'Mike Rowan',
     title: 'Software Architect & Executive',
     description:
-      'with a long history of creating and operating businesses in distributed systems, analytics, high availability, and data protection. He has been the CTO and/or founder of a 6 startups, all acquired or still operating. His startup tenure includes Viridity Software (acquired by APC), Revivio (acquired by Symantec), StorageCom (acquired by Mendocino then Symantec), CLaM Associates (acquired by Lakeview Technologies), Cobalt Iron, LassoFX, and Armored Things.'
+      'With a long history of creating and operating businesses in distributed systems, analytics, high availability, and data protection. He has been the CTO and/or founder of a 6 startups, all acquired or still operating. His startup tenure includes Viridity Software (acquired by APC), Revivio (acquired by Symantec), StorageCom (acquired by Mendocino then Symantec), CLaM Associates (acquired by Lakeview Technologies), Cobalt Iron, LassoFX, and Armored Things.'
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ export const profiles = [
     name: 'Sal Mendola',
     title: 'Seasoned Software Architect',
     description:
-      'with over 30 years of experience. Expert in Java development and enterprise back end design. Spring, SpringBoot, Hibernate and many other server-side technologies. On the client side, he is expert in Javascript (ES6) and modern bundling and deployment stacks. He is also a key REST architect and fluent in most databases, NoSQL, message busses, and more.'
+      'With over 30 years of experience. Expert in Java development and enterprise back end design. Spring, SpringBoot, Hibernate and many other server-side technologies. On the client side, he is expert in Javascript (ES6) and modern bundling and deployment stacks. He is also a key REST architect and fluent in most databases, NoSQL, message busses, and more.'
   },
   {
     id: 10,

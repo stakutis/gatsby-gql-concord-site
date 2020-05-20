@@ -17,16 +17,6 @@ body {
   font-weight: 100;
 }
 
-.flex_row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex_col {
-  display: flex;
-  flex-direction: column;
-}
-
 h1,
 h2,
 h3,
@@ -43,8 +33,4 @@ p {
 :root {
   --primary-color: blue;
   --secondary-color: white;
-}
-
-.main_pages_top_div {
-  width: 80%;
 }

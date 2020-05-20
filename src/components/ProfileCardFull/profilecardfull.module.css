@@ -1,3 +1,7 @@
+.card_wrap {
+  width: 80%;
+}
+
 .card_full {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,9 @@
   border-bottom: 2em solid blue;
 }
 
-/* fix card image for larger screens, add font weights to card text */
+.card_top_row {
+  display: flex;
+}
 
 .card_image {
   width: 10em;

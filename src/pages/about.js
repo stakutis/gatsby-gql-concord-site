@@ -5,9 +5,7 @@ import ProfileCardSection from '../components/ProfileCardSection';
 const About = () => {
   return (
     <Layout title="About page">
-      <div className="main_pages_top_div">
-        <ProfileCardSection />
-      </div>
+      <ProfileCardSection />
     </Layout>
   );
 };

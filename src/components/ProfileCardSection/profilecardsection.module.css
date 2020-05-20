@@ -2,7 +2,9 @@
   .card_section {
     display: grid;
     grid-template-columns: auto auto;
+    column-gap: 3em;
     padding: 1em;
+    margin: 1em;
   }
 }
 
@@ -11,17 +13,26 @@
     display: flex;
     flex-direction: column;
     padding: 1em;
+    margin: 3em;
   }
 }
 
+.about_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+}
+
 .top_div {
-  margin-top: 2em;
   margin-bottom: 1em;
 }
 
 .top_div > h1 {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
@@ -29,6 +40,7 @@
   text-align: center;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
+  margin-right: 2em;
 }
 
 .top_div > p {
@@ -38,6 +50,8 @@
 .top_card {
   margin-top: 2em;
   margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .card {

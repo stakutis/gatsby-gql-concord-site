@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+.card_top_row {
+  display: flex;
+}
+
 /* fix card image for larger screens, add font weights to card text */
 
 .card_image {
@@ -29,6 +33,7 @@
 
 .card_desc {
   padding: 1em;
+  margin-top: 1em;
 }
 
 .collapse {

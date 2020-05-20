@@ -1,0 +1,124 @@
+@media only screen and (min-width: 900px) {
+  .header_home {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    background-color: lightcyan;
+  }
+
+  .header_not_home {
+    border-bottom: lightgrey 0.5px dotted;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .right_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+  }
+
+  .left_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+  }
+
+  .mid_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+  }
+
+  .search_icon {
+    display: none;
+  }
+}
+
+/* header links */
+
+.header_link {
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.header_link:hover {
+  border-bottom: 1px solid red;
+}
+
+.header_link_active {
+  border-bottom: 1px solid red;
+}
+
+/* Drop down menu */
+
+.header_photo {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.drop_down_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.drop_down_wrapper > i {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.drop_down {
+  position: absolute;
+  z-index: 1;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+.drop_down_link {
+  text-align: center;
+  width: 10vh;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.drop_down_link:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Login Button */
+
+.login_button {
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}
+
+.login_button_active {
+  color: white;
+  background-color: blue;
+}
+
+.login_button:hover {
+  color: white;
+  background-color: blue;
+}
