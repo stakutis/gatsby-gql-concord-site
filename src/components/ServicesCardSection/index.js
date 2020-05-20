@@ -33,7 +33,7 @@ const ServiceCardSection = () => {
       <h1 className={styles.second_header}>Other Services</h1>
       <div className={styles.card_rows}>
         {otherServices.map(service => (
-          <ServiceCard service={service} />
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
     </div>

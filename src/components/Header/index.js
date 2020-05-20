@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import styles from './header.module.css';
 
 import { Link } from 'gatsby';
@@ -13,24 +13,17 @@ import { AiOutlineClose } from 'react-icons/ai';
 const Header = ({ props }) => {
   const [menu, toggleMenu] = useState(false);
   const [search, setSearch] = useState(false);
+  const [isHome, setHome] = useState(true);
   const context = useContext(AuthContext);
   const { path } = props;
 
-  const menuHandler = () => {
-    if (menu) {
-      toggleMenu(false);
-    } else {
-      toggleMenu(true);
-    }
-  };
+  useEffect(() => {
+    () => (path === '/' ? setHome(true) : setHome(false));
+  }, []);
 
-  const searchHandler = () => {
-    if (search) {
-      setSearch(false);
-    } else {
-      setSearch(true);
-    }
-  };
+  const menuHandler = () => (menu ? toggleMenu(false) : toggleMenu(true));
+
+  const searchHandler = () => (search ? setSearch(false) : setSearch(true));
 
   const logOut = () => {
     navigate('/');
@@ -40,7 +33,7 @@ const Header = ({ props }) => {
 
   const pathname = path === '/';
 
-  console.log(path);
+  console.log(props);
 
   /* All the desktop elements are set to display: none in the mobile 
   media query in css and vice versa. This pattern is used to avoid complex issues 
@@ -48,7 +41,7 @@ const Header = ({ props }) => {
 
   return (
     <>
-      <header className={pathname ? styles.header_home : styles.header_not_home}>
+      <header className={isHome ? styles.header_home : styles.header_not_home}>
         <div className={styles.left_header}>
           {/* Desktop */}
           <div className={styles.desktop_logo}>
@@ -121,7 +114,7 @@ const Header = ({ props }) => {
         {/* Mobile */}
         <div className={styles.mobile_search}>
           {search && (
-            <div className={pathname ? styles.search_home : styles.search_not_home}>
+            <div className={isHome ? styles.search_home : styles.search_not_home}>
               <Search />
             </div>
           )}
@@ -133,7 +126,7 @@ const Header = ({ props }) => {
       {/* Mobile */}
       {menu && (
         <>
-          <div className={pathname ? styles.dropdown_home : styles.dropdown_not_home}>
+          <div className={isHome ? styles.dropdown_home : styles.dropdown_not_home}>
             <Link
               to="/about"
               className={styles.header_links_mobile}

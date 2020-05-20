@@ -9,8 +9,8 @@ const ServiceCard = props => {
       <h1 className={styles.service_title}>{service.title}</h1>
       <div className={styles.icon}>{service.icon()}</div>
       <ul className={styles.service_list}>
-        {service.description.map(item => (
-          <li>{item}</li>
+        {service.description.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </div>

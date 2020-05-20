@@ -35,7 +35,7 @@ const ProfileCardSection = () => {
       </div>
       <div className={styles.card_section}>
         {profiles.map(profile => (
-          <div className={styles.card}>
+          <div key={profile.id} className={styles.card}>
             <ProfileCard key={profile.id} profile={profile} />
           </div>
         ))}
