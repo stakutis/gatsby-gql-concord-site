@@ -40,6 +40,8 @@ const Header = ({ props }) => {
 
   const pathname = path === '/';
 
+  console.log(path);
+
   /* All the desktop elements are set to display: none in the mobile 
   media query in css and vice versa. This pattern is used to avoid complex issues 
   during build phases arising from using the window object */
