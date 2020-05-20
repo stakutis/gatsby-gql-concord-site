@@ -16,11 +16,15 @@ const ContactSection = () => {
         <img src={image2} alt="" />
         <div className={styles.background}> </div>
         <div className={styles.email_phone}>
-          <h3>Also Available by Phone and Email</h3>
+          <h2>Also Available by Phone and Email</h2>
+          <h3>Email: </h3>
+          <p> chris.stakutis@concordsoftwareandexecutiveconsulting.com</p>
+          <h3>Phone: </h3>
+          <p> 1-978-764-3488</p>
         </div>
         <div className={styles.social_bar}>
           <h3 className={styles.social_title}>
-            Feel Free to Connect With Us on Social, Just to Chat
+            Feel Free to Connect With Us on Social Just to Chat
           </h3>
           <SocialBar />
         </div>

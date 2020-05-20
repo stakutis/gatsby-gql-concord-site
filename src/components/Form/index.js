@@ -23,7 +23,13 @@ const ContactForm = () => {
           <div className={styles.loading_background}></div>
         </>
       )}
-      <form onSubmit={handleSubmit} name="Contact Form" method="POST" data-netlify="true">
+      <form
+        className={styles.main_form}
+        onSubmit={handleSubmit}
+        name="Contact Form"
+        method="POST"
+        data-netlify="true"
+      >
         <input type="hidden" name="form-name" value="Contact Form" />
         <div className={styles.form_row}>
           <label>Your Name:</label>

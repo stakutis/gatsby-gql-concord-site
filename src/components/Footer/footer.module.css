@@ -1,7 +1,7 @@
 .footer_wrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
   margin-top: 2em;
   position: relative;
 }
@@ -19,8 +19,7 @@
 .footer_main {
   display: flex;
   flex-direction: row;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em;
   background-color: darkblue;
 }
 

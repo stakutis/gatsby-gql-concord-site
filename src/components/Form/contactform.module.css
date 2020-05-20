@@ -17,17 +17,17 @@
   align-self: center;
 }
 
-form {
+.main_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-label {
+.form_row > label {
   padding-bottom: 0.2em;
 }
 
-textarea {
+.form_row > textarea {
   height: 7em;
 }
 

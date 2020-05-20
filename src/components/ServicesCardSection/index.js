@@ -8,7 +8,7 @@ import { FcOnlineSupport } from 'react-icons/fc';
 const ServiceCardSection = () => {
   return (
     <div className={styles.top_div}>
-      <h1>Areas Of Expertise</h1>
+      <h1 className={styles.top_header}>Areas Of Expertise</h1>
       <FaReact className={styles.main_icon} />
       <h3 className={styles.title_desc}>
         We have the tech experience you need, Our expert team of advisors and consultants can answer
