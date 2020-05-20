@@ -15,11 +15,9 @@ const Header = ({ props }) => {
   const [search, setSearch] = useState(false);
   const [isHome, setHome] = useState(true);
   const context = useContext(AuthContext);
-  const { path } = props;
+  const { uri } = props;
 
-  useEffect(() => {
-    path === '/' ? setHome(true) : setHome(false);
-  }, []);
+  const pathname = uri === '/';
 
   const menuHandler = () => (menu ? toggleMenu(false) : toggleMenu(true));
 
@@ -31,8 +29,6 @@ const Header = ({ props }) => {
     setTimeout(() => context.LogOut(), 200);
   };
 
-  const pathname = path === '/';
-
   console.log(props);
 
   /* All the desktop elements are set to display: none in the mobile 
@@ -41,7 +37,7 @@ const Header = ({ props }) => {
 
   return (
     <>
-      <header className={isHome ? styles.header_home : styles.header_not_home}>
+      <header className={pathname ? styles.header_home : styles.header_not_home}>
         <div className={styles.left_header}>
           {/* Desktop */}
           <div className={styles.desktop_logo}>
