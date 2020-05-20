@@ -10,12 +10,11 @@ import { FcSearch } from 'react-icons/fc';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import { globalHistory as history } from '@reach/router';
-
-const Header = () => {
+const Header = ({ props }) => {
   const [menu, toggleMenu] = useState(false);
   const [search, setSearch] = useState(false);
   const context = useContext(AuthContext);
+  const { path } = props;
 
   const menuHandler = () => {
     if (menu) {
@@ -39,7 +38,7 @@ const Header = () => {
     setTimeout(() => context.LogOut(), 200);
   };
 
-  const pathname = history.location.pathname === '/' ? true : false;
+  const pathname = path === '/';
 
   /* All the desktop elements are set to display: none in the mobile 
   media query in css and vice versa. This pattern is used to avoid complex issues 

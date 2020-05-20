@@ -4,7 +4,7 @@ import Header from '../Header';
 import styles from './layout.module.css';
 import SEO from '../SEO';
 
-const Layout = ({ title, description, children }) => {
+const Layout = ({ props, title, description, children }) => {
   const seoData = {
     title,
     description
@@ -14,7 +14,7 @@ const Layout = ({ title, description, children }) => {
     <>
       <SEO seoData={seoData} />
       <div className={styles.layout}>
-        <Header />
+        <Header props={{ ...props }} />
         <main>{children}</main>
         <Footer />
       </div>
