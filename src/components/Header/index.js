@@ -18,7 +18,7 @@ const Header = ({ props }) => {
   const { path } = props;
 
   useEffect(() => {
-    () => (path === '/' ? setHome(true) : setHome(false));
+    path === '/' ? setHome(true) : setHome(false);
   }, []);
 
   const menuHandler = () => (menu ? toggleMenu(false) : toggleMenu(true));

@@ -9,7 +9,7 @@ const Footer = () => {
 
         <div className={styles.footer_main}>
           <div className={styles.left_footer}>
-            <div className={styles.footer_link}>Link 1 </div>
+            <div className={styles.footer_link}>Link </div>
             <div className={styles.footer_link}>Link 2 </div>
             <div className={styles.footer_link}>Link 3</div>
           </div>
