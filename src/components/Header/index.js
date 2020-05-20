@@ -13,11 +13,10 @@ import { AiOutlineClose } from 'react-icons/ai';
 const Header = ({ props }) => {
   const [menu, toggleMenu] = useState(false);
   const [search, setSearch] = useState(false);
-  const [isHome, setHome] = useState(true);
   const context = useContext(AuthContext);
   const { uri } = props;
 
-  const pathname = uri === '/';
+  const isHome = uri === '/';
 
   const menuHandler = () => (menu ? toggleMenu(false) : toggleMenu(true));
 
@@ -29,15 +28,13 @@ const Header = ({ props }) => {
     setTimeout(() => context.LogOut(), 200);
   };
 
-  console.log(props);
-
   /* All the desktop elements are set to display: none in the mobile 
   media query in css and vice versa. This pattern is used to avoid complex issues 
   during build phases arising from using the window object */
 
   return (
     <>
-      <header className={pathname ? styles.header_home : styles.header_not_home}>
+      <header className={isHome ? styles.header_home : styles.header_not_home}>
         <div className={styles.left_header}>
           {/* Desktop */}
           <div className={styles.desktop_logo}>
