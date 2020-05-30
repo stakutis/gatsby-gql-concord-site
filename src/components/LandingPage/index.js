@@ -30,16 +30,14 @@ const Home = () => {
     <div>
       <div className={styles.main}>
         <div className={styles.landing_hero}>
-          <h1 className={styles.value_prop}>
-            World Class Tech Experts Helping You Make Your Idea a Reality
-          </h1>
+          <h1 className={styles.value_prop}>Concord Software and Executive Consulting</h1>
 
           <img className={styles.hero_illustration} src={image3} alt="" />
         </div>
         <div className={styles.wave_bottom_hero}>
           <img src={image2} alt="" />
         </div>
-        <h1 className={styles.site_title}> Concord Software and Executive Consulting</h1>
+
         <hr className={styles.top_line} />
 
         <div className={styles.feature1}>

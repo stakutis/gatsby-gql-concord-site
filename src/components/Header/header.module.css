@@ -4,7 +4,8 @@
   .header_home {
     display: grid;
     grid-template-columns: [left_header] 1fr [mid_header] 1fr [right_header] 1fr;
-    padding: 0.5em;
+    padding: 1em;
+
     background-color: lightcyan;
   }
 
@@ -12,7 +13,8 @@
     border-bottom: lightgrey 0.5px dotted;
     display: grid;
     grid-template-columns: [left_header] 1fr [mid_header] 1fr [right_header] 1fr;
-    padding: 0.5em;
+    padding: 1em;
+
     margin-bottom: 2em;
   }
 
