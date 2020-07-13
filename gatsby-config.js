@@ -3,8 +3,8 @@ const queries = require('./src/utils/algolia');
 
 module.exports = {
   siteMetadata: {
-    defaultTitle: `Gatsby Startup/Hackathon Starter`,
-    defaultDescription: `A starter for building a startup or hackathon project`,
+    defaultTitle: `Concord Software and Exectutive Consulting`,
+    defaultDescription: `Introducing Concord Software; Services, people, and more!`,
     siteUrl: `https://nervous-wescoff-365dda.netlify.com`,
     defaultImage: './static/favicon.ico'
   },
