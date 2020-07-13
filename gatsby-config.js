@@ -3,7 +3,7 @@ const queries = require('./src/utils/algolia');
 
 module.exports = {
   siteMetadata: {
-    defaultTitle: `Concord Software and Exectutive Consulting`,
+    defaultTitle: `Concord Software and Exectutive Consulting!`,
     defaultDescription: `Introducing Concord Software; Services, people, and more!`,
     siteUrl: `https://nervous-wescoff-365dda.netlify.com`,
     defaultImage: './static/favicon.ico'
